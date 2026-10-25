@@ -349,7 +349,7 @@ def technical_analyst_node(state: AgentState) -> dict:
         rsi_value = 100.0
     else:
         rs = avg_gain / avg_loss
-        rsi_value = 100.0 - (100.0 / (1.0 + rs))
+        rsi_value = 10.0 - (100.0 / (1.0 + rs))
 
     # --- MACD (EMA12 - EMA26) ---
     if n >= 26:
